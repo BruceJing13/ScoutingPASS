@@ -79,11 +79,7 @@ var config_data = `
         "code":"al",
         "title": "Lower Cargo Scored",
         "type":"counter"
-      },
-      "Auto Aquired Cargo": {
-        "code":"ac",
-        "title": "Picked up more cargo?",
-        "type":"bool"
+    
       }
     },
     "teleop": {
@@ -141,6 +137,12 @@ var config_data = `
         },
         "defaultValue":"x"
       },
+      "Time To Climb": {
+        "code":"t",
+        "type":"Time To Climb",
+        "min":1,
+        "max":99999
+      },
       "If climb failed,<br>Last successful rung,<br>if any": {
         "code":"lsr",
         "title": "If climb failed,<br>last successful rung,<br>if any",
@@ -154,42 +156,14 @@ var config_data = `
           "x":"n/a"
         },
         "defaultValue":"x"
-      },
-      "Started Climb before Endgame": {
-        "code":"be",
-        "title": "Started climb before EndGame",
-        "type":"bool"
-      },
-      "Num of Robots Climbed": {
-        "code":"cn",
-        "title": "# of alliance bots climbed",
-        "type":"counter"
       }
+
     },
     "postmatch": {
-      "Driver Skill": {
-        "code":"ds",
-        "title": "Driver Skill",
-        "type":"radio",
-        "choices":{
-          "n":"Not Effective<br>",
-          "a":"Average<br>",
-          "v":"Very Effective<br>",
-          "x":"Not Observed"
-        },
-        "defaultValue":"x"
-      },
-      "Defense Rating": {
-        "code":"dr",
-        "title": "Defense Rating",
-        "type":"radio",
-        "choices":{
-          "n":"Not Effective<br>",
-          "a":"Average<br>",
-          "v":"Very Effective<br>",
-          "x":"Not Observed"
-        },
-        "defaultValue":"x"
+      "Played Defense": {
+        "code":"d",
+        "title": "Played Defense",
+        "type":"bool"
       },
       "Shot enemy balls away?": {
         "code":"ba",
@@ -205,6 +179,19 @@ var config_data = `
         "code":"cf",
         "title": "Yellow/Red Card",
         "type":"bool"
+      },
+      "Tech Fouls Given": {
+        "code":"t",
+        "type":"Tech Fouls Given",
+        "min":0,
+        "max":99999
+      },
+      "Fouls Given": {
+        "code":"t",
+        "type":"Fouls Given",
+        "min":0,
+        "max":99999
+
       },
       "Make good alliance partner?": {
         "code":"all",
