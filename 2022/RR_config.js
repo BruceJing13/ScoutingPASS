@@ -139,7 +139,8 @@ var config_data = `
       },
       "Time To Climb": {
         "code":"t",
-        "type":"Time To Climb",
+        "title":"Time To Climb",
+        "type":"number",
         "min":1,
         "max":99999
       },
@@ -182,13 +183,15 @@ var config_data = `
       },
       "Tech Fouls Given": {
         "code":"t",
-        "type":"Tech Fouls Given",
+        "title":"Tech Fouls Given",
+        "type":"number",
         "min":0,
         "max":99999
       },
       "Fouls Given": {
         "code":"t",
-        "type":"Fouls Given",
+        "title":"Fouls Given",
+        "type":"number",
         "min":0,
         "max":99999
 
