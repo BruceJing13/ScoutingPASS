@@ -14,7 +14,7 @@ var config_data = `
       "Event":{
         "code":"e",
         "type":"event",
-        "defaultValue":"2022flwp",
+        "defaultValue":"2022 Columbus",
         "required":"true",
         "disabled":"true"
       },
@@ -98,23 +98,6 @@ var config_data = `
         "title": "Was Defended",
         "type":"bool"
       },
-      "Wallbot?": {
-        "code":"wbt",
-        "title": "Wallbot?",
-        "type":"bool"
-      },
-      "Cargo Intake From": {
-        "code":"cif",
-        "title": "Cargo Intake From",
-        "type":"radio",
-        "choices":{
-          "t":"Terminal<br>",
-          "g":"Ground<br>",
-          "b":"Both<br>",
-          "x":"Not Attempted"
-        },
-        "defaultValue":"x"
-      },
       "Shooting Spot": {
         "code":"ss",
         "title": "Shooting Spot",
@@ -138,7 +121,7 @@ var config_data = `
         "defaultValue":"x"
       },
       "Time To Climb": {
-        "code":"t",
+        "code":"tc",
         "title":"Time To Climb",
         "type":"number",
         "min":1,
@@ -162,13 +145,8 @@ var config_data = `
     },
     "postmatch": {
       "Played Defense": {
-        "code":"d",
+        "code":"pd",
         "title": "Played Defense",
-        "type":"bool"
-      },
-      "Shot enemy balls away?": {
-        "code":"ba",
-        "title": "Shot enemy balls away?",
         "type":"bool"
       },
       "Died/Tipped": {
@@ -181,25 +159,12 @@ var config_data = `
         "title": "Yellow/Red Card",
         "type":"bool"
       },
-      "Tech Fouls Given": {
-        "code":"t",
-        "title":"Tech Fouls Given",
-        "type":"number",
-        "min":0,
-        "max":99999
-      },
-      "Fouls Given": {
-        "code":"t",
+      "Fouls Given(if they do the flag thing)": {
+        "code":"fg",
         "title":"Fouls Given",
         "type":"number",
         "min":0,
         "max":99999
-
-      },
-      "Make good alliance partner?": {
-        "code":"all",
-        "title": "Make good alliance partner?",
-        "type":"bool"
       },
       "Comments": {
         "code":"co",
@@ -207,17 +172,6 @@ var config_data = `
         "type":"text",
         "size":15,
         "maxSize":50
-      },
-      "Confidence Rating": {
-        "code":"cnf",
-        "title": "Confidence Rating",
-        "type":"radio",
-        "choices":{
-          "v":"Very Confident<br>",
-          "a":"Average<br>",
-          "n":"Not Confident"
-      },
-       "defaultValue":"a"
     }
     }
   }
