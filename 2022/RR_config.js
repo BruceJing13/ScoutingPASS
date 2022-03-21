@@ -14,7 +14,7 @@ var config_data = `
       "Event":{
         "code":"e",
         "type":"event",
-        "defaultValue":"2022 Columbus",
+        "defaultValue":"2022 Tippecanoe",
         "required":"true",
         "disabled":"true"
       },
